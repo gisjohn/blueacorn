@@ -1,0 +1,113 @@
+& when (@media-common = true) {
+ 
+    .button.primary.tocart
+    {
+        background-color: @ra-purple;
+        color: @ra-white;
+        position: relative;
+    }
+    
+    .button.primary.tocart::after
+    {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        width: 0px;
+        height: 0px;
+        border-bottom: 7px solid @ra-white;
+        border-left: 7px solid @ra-purple-corner; 
+        z-index:5;
+    }
+    
+    
+    .button.primary.tocart:hover::after
+    {
+        bottom: -4px;
+        right: -4px;
+    }
+    
+    
+    .button.primary.tocart:hover
+    {
+        background-color: @ra-white;
+        border: solid 4px @ra-purple;
+        color: @ra-black;
+    }
+ 
+    .button.btn-continue
+    {
+        background-color: @ra-blue;
+        color: @ra-white;
+        position: relative;
+    }
+    
+    .button.btn-continue::after
+    {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        width: 0px;
+        height: 0px;
+        border-bottom: 7px solid @ra-white;
+        border-left: 7px solid @ra-blue-corner; 
+        z-index:5;
+    }
+    
+    .button.btn-continue:hover
+    {
+        background-color: @ra-white;
+        border: solid 4px @ra-blue;
+        color: @ra-black;
+    }
+    
+    .button.btn-continue:hover::after
+    {
+        bottom: -4px;
+        right: -4px;
+    }
+    
+    
+    .action.primary.checkout
+    {
+        background-color: @ra-yellow;
+        color: @ra-white;
+        border: 0px;
+        position: relative;
+    }
+    
+    
+    .action.primary.checkout::after
+    {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        width: 0px;
+        height: 0px;
+        border-bottom: 7px solid @ra-white;
+        border-left: 7px solid @ra-yellow-corner; 
+        z-index:5;
+    }
+    
+    .action.primary.checkout:hover
+    {
+        background-color: @ra-white;
+        border: solid 4px @ra-yellow;
+        color: @ra-black;
+    }
+    
+    .action.primary.checkout:hover::after
+    {
+        bottom: -4px;
+        right: -4px;
+    }
+    
+    
+    button, a.action.primary {
+        border-radius: 0px;
+        border: 0px;
+    }
+    
+}

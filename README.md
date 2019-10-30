@@ -1,2 +1,0 @@
-# blueacorn
-SKills Test
